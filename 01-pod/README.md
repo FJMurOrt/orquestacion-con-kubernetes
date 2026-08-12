@@ -8,7 +8,7 @@ En este ejercicio creo un Pod con un contenedor de nginx.
 kubectl apply -f pod.yaml
 ```
 
-## Comprobar que funciona
+## ¿Cómo comprobarlo?
 
 ```bash
 kubectl get pods
