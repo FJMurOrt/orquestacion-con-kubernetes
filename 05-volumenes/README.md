@@ -4,8 +4,8 @@ Para aplicaciones en las que se necesite conservar datos, como una base de datos
 
 ## Los dos objetos que necesitamos
 
-- **PersistentVolumeClaim (PVC)** — La petición. La aplicación solicita el almacenamiento que necesita.
-- **PersistentVolume (PV)** — El almacenamiento real: una carpeta del nodo, un disco del proveedor cloud, un NFS.
+- PersistentVolumeClaim (PVC) - La petición. La aplicación solicita el almacenamiento que necesita.
+- PersistentVolume (PV) - El almacenamiento real: una carpeta del nodo, un disco del proveedor cloud, un NFS.
 
 ## Modos de acceso
 
