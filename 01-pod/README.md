@@ -24,7 +24,7 @@ Los Pods no son accesibles desde fuera del clúster por defecto. Para probarlo s
 kubectl port-forward pod/pod-nginx 8080:80
 ```
 
-Y acceder en `http://localhost:8080`
+Y acceder en -> http://localhost:8080
 
 ## Eliminar el pod
 
