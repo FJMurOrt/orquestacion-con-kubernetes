@@ -4,8 +4,8 @@ ConfigMap y Secret me permiten separar la configuración del código, de forma q
 
 ## Diferencia
 
-- **ConfigMap** — Configuración no sensible: entorno, nivel de log, límites, URLs de servicios.
-- **Secret** — Datos sensibles: contraseñas, tokens, claves de API.
+- ConfigMap - Configuración no sensible: entorno, nivel de log, límites, URLs de servicios.
+- Secret - Datos sensibles: contraseñas, tokens, claves de API.
 
 ## ¿Cómo aplicarlo?
 
@@ -22,7 +22,7 @@ kubectl get secrets
 kubectl describe configmap configuracion-app
 ```
 
-Los valores de un Secret no se muestran con `describe`, solo aparece su tamaño.
+Los valores de un Secret no se muestran con "describe", solo aparece su tamaño.
 
 Para ver el contenido codificado:
 
