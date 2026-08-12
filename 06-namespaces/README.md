@@ -1,6 +1,6 @@
 # 06 - Namespaces
 
-En este ejercicio creo dos namespaces, `desarrollo` y `produccion`, y despliego la misma aplicación en ambos con distinto número de réplicas.
+En este ejercicio creo dos namespaces, desarrollo y produccion, y despliego la misma aplicación en ambos con distinto número de réplicas.
 
 ## ¿Para qué sirven? Por ejmplo
 
@@ -12,9 +12,9 @@ En este ejercicio creo dos namespaces, `desarrollo` y `produccion`, y despliego 
 
 Todo clúster incluye varios de serie:
 
-- `default` — donde se crean los recursos si no se indica otro
-- `kube-system` — componentes internos de Kubernetes
-- `kube-public` — recursos accesibles por todos
+- default - donde se crean los recursos si no se indica otro
+- kube-system - componentes internos de Kubernetes
+- kube-public - recursos accesibles por todos
 
 ## ¿Cómo aplicarlo?
 
@@ -34,7 +34,7 @@ kubectl get pods -n produccion
 
 En desarrollo deben aparecer 2 pods y en producción 4.
 
-Sin indicar namespace, `kubectl get pods` solo muestra los del namespace `default`.
+Sin indicar namespace, - kubectl get pods -  solo muestra los del namespace "default".
 
 Para ver los pods de todos los namespaces:
 
@@ -44,7 +44,7 @@ kubectl get pods --all-namespaces
 
 ## Cambiar el namespace por defecto
 
-Para no tener que escribir `-n` en cada comando:
+Para no tener que escribir -n en cada comando:
 
 ```bash
 kubectl config set-context --current --namespace=desarrollo
