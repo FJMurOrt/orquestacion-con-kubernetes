@@ -6,17 +6,17 @@ En este ejercicio expongo el Deployment de nginx que había creado anteriormente
 
 ## ¿Por qué con NodePort? Hay 3 tipos
 
-- **ClusterIP** — Solo accesible desde dentro del clúster, es decir, no me vale si lo que quiero es exponerlo hacia fuera.
-- **NodePort** — Abre un puerto en el nodo para permitir acceso desde fuera. Útil para pruebas en entornos locales.
-- **LoadBalancer** — Un balanceador de carga del proveedor clen la nube.
+- ClusterIP - Solo accesible desde dentro del clúster, es decir, no me vale si lo que quiero es exponerlo hacia fuera.
+- NodePort - Abre un puerto en el nodo para permitir acceso desde fuera. Útil para pruebas en entornos locales.
+- LoadBalancer - Un balanceador de carga del proveedor clen la nube.
 
 ## Los tres puertos
 
 | Puerto | Dónde vive | Función |
 |--------|-----------|---------|
-| `nodePort` | En el nodo | Puerto de entrada desde fuera del clúster (30000-32767) |
-| `port` | En el Service | Puerto por el que se accede al Service dentro del clúster |
-| `targetPort` | En el contenedor | Puerto donde escucha la aplicación |
+| nodePort | En el nodo | Puerto de entrada desde fuera del clúster (30000-32767) |
+| port | En el Service | Puerto por el que se accede al Service dentro del clúster |
+| targetPort | En el contenedor | Puerto donde escucha la aplicación |
 
 El recorrido de una petición sería: nodePort → port → targetPort → contenedor.
 
@@ -36,7 +36,7 @@ kubectl get services
 kubectl describe service servicio-nginx
 ```
 
-En `describe` aparecen los Endpoints, que son las IPs de los pods a los que el Service está enviando tráfico.
+En "describe" aparecen los Endpoints, que son las IPs de los pods a los que el Service está enviando tráfico.
 
 ## Para acceder al Service
 
