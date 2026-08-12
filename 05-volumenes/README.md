@@ -36,7 +36,7 @@ El estado del PVC debe ser `Bound`, lo que significa que se le ha asignado almac
 Escribir un archivo dentro del volumen:
 
 ```bash
-kubectl exec pod-con-almacenamiento -- sh -c "echo 'Hola desde el volumen' > /usr/share/nginx/html/index.html"
+kubectl exec pod-con-almacenamiento -- sh -c "echo 'Hola!' > /usr/share/nginx/html/index.html"
 ```
 
 Eliminar el pod y volver a crearlo:
