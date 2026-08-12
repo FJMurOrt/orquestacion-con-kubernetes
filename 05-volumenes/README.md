@@ -29,7 +29,7 @@ kubectl get pvc
 kubectl describe pvc almacenamiento-datos
 ```
 
-El estado del PVC debe ser `Bound`, lo que significa que se le ha asignado almacenamiento.
+El estado del PVC debe ser "Bound", lo que significa que se le ha asignado almacenamiento.
 
 ## Probar la persistencia
 
