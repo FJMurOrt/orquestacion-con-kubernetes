@@ -28,6 +28,7 @@ kubectl apply -f pod-con-volumen.yaml
 kubectl get pvc
 kubectl describe pvc almacenamiento-datos
 ```
+![14](./capturas/14.png)
 
 El estado del PVC debe ser "Bound", lo que significa que se le ha asignado almacenamiento.
 
@@ -51,6 +52,8 @@ Comprobar que el archivo sigue ahí:
 ```bash
 kubectl exec pod-con-almacenamiento -- cat /usr/share/nginx/html/index.html
 ```
+
+![15](./capturas/15.png)
 
 ## Eliminar
 
