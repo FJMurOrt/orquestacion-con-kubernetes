@@ -47,8 +47,6 @@ kubectl set image deployment/despliegue-nginx nginx=nginx:1.26
 kubectl rollout status deployment/despliegue-nginx
 ```
 
-![6](./capturas/6.png)
-
 ## Para volver a la versión anterior
 
 ```bash
