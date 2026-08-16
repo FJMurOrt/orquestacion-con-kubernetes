@@ -15,7 +15,7 @@ kubectl get pods
 kubectl describe pod pod-nginx
 kubectl logs pod-nginx
 ```
-![1](./capturas/1)
+![1](./capturas/1.png)
 ## Acceder al pod
 
 Los Pods no son accesibles desde fuera del clúster por defecto. Para probarlo se puede redirigir un puerto temporalmente:
@@ -26,7 +26,7 @@ kubectl port-forward pod/pod-nginx 8080:80
 
 Y acceder en -> http://localhost:8080
 
-![2](./capturas/2)
+![2](./capturas/2.png)
 
 ## Eliminar el pod
 
