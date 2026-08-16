@@ -32,6 +32,8 @@ kubectl get pods -n desarrollo
 kubectl get pods -n produccion
 ```
 
+![16](./capturas/16.png)
+
 En desarrollo deben aparecer 2 pods y en producción 4.
 
 Sin indicar namespace, - kubectl get pods -  solo muestra los del namespace "default".
@@ -41,6 +43,10 @@ Para ver los pods de todos los namespaces:
 ```bash
 kubectl get pods --all-namespaces
 ```
+
+## Para ver los Pods de cada namespace
+
+![17](./capturas/17.png)
 
 ## Cambiar el namespace por defecto
 
