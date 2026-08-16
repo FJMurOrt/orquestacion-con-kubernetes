@@ -8,6 +8,7 @@ En este ejercicio despliego 3 réplicas de nginx.
 ```bash
 kubectl apply -f deployment.yaml
 ```
+![3](./capturas/3.png)
 
 ## Comprobar que funciona
 
@@ -15,6 +16,8 @@ kubectl apply -f deployment.yaml
 kubectl get deployments
 kubectl get pods
 ```
+
+![4](./capturas/4.png)
 
 Deberían aparecer 3 pods con nombres generados automáticamente.
 
@@ -27,12 +30,16 @@ kubectl delete pod <nombre-del-pod>
 kubectl get pods
 ```
 
+![5](./capturas/5.png)
+
 ## Para escalar el número de replicas
 
 ```bash
 kubectl scale deployment despliegue-nginx --replicas=5
 kubectl get pods
 ```
+
+![6](./capturas/6.png)
 
 ## Actualizar la imagen
 
