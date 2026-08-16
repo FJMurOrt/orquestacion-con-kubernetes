@@ -36,7 +36,11 @@ kubectl get services
 kubectl describe service servicio-nginx
 ```
 
+![7](./capturas/7.png)
+
 En "describe" aparecen los Endpoints, que son las IPs de los pods a los que el Service está enviando tráfico.
+
+![8](./capturas/8.png)
 
 ## Para acceder al Service
 
@@ -45,6 +49,10 @@ Con Minikube:
 ```bash
 minikube service servicio-nginx --url
 ```
+
+![9](./capturas/9.png)
+
+![10](./capturas/10.png)
 
 ## Eliminar el Service
 
