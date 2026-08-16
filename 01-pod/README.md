@@ -16,6 +16,7 @@ kubectl describe pod pod-nginx
 kubectl logs pod-nginx
 ```
 ![1](./capturas/1.png)
+
 ## Acceder al pod
 
 Los Pods no son accesibles desde fuera del clúster por defecto. Para probarlo se puede redirigir un puerto temporalmente:
