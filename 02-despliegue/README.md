@@ -17,8 +17,6 @@ kubectl get deployments
 kubectl get pods
 ```
 
-![4](./capturas/4.png)
-
 Deberían aparecer 3 pods con nombres generados automáticamente.
 
 ## El autohealing
@@ -29,8 +27,7 @@ Al borrar uno de los pods manualmente, el Deployment crea otro para mantener las
 kubectl delete pod <nombre-del-pod>
 kubectl get pods
 ```
-
-![5](./capturas/5.png)
+![4](./capturas/4.png)
 
 ## Para escalar el número de replicas
 
@@ -39,7 +36,7 @@ kubectl scale deployment despliegue-nginx --replicas=5
 kubectl get pods
 ```
 
-![6](./capturas/6.png)
+![5](./capturas/5.png)
 
 ## Actualizar la imagen
 
@@ -49,6 +46,8 @@ Con el Deployment también consigo actualizar los pods de forma progresiva, sin 
 kubectl set image deployment/despliegue-nginx nginx=nginx:1.26
 kubectl rollout status deployment/despliegue-nginx
 ```
+
+![6](./capturas/6.png)
 
 ## Para volver a la versión anterior
 
