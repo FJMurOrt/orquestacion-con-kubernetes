@@ -21,6 +21,7 @@ kubectl get configmaps
 kubectl get secrets
 kubectl describe configmap configuracion-app
 ```
+![11](./capturas/11.png)
 
 Los valores de un Secret no se muestran con "describe", solo aparece su tamaño.
 
@@ -29,6 +30,7 @@ Para ver el contenido codificado:
 ```bash
 kubectl get secret credenciales-app -o yaml
 ```
+![12](./capturas/12.png)
 
 ## ¿Cómo los consume un Pod?
 
@@ -49,6 +51,8 @@ env:
 ```
 
 También pueden montarse como archivos dentro del contenedor mediante volúmenes.
+
+![13](./capturas/13.png)
 
 ## Eliminar
 
