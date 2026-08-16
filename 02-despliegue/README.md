@@ -8,7 +8,6 @@ En este ejercicio despliego 3 réplicas de nginx.
 ```bash
 kubectl apply -f deployment.yaml
 ```
-![3](./capturas/3.png)
 
 ## Comprobar que funciona
 
@@ -16,6 +15,7 @@ kubectl apply -f deployment.yaml
 kubectl get deployments
 kubectl get pods
 ```
+![3](./capturas/3.png)
 
 Deberían aparecer 3 pods con nombres generados automáticamente.
 
